@@ -19,7 +19,7 @@ async function updateRecommended() {
 	);
 
 	const suggestionsUrl =
-		"https://raw.githubusercontent.com/geetesh007/HealCloud/main/HealRecommend.json";
+		"https://raw.githubusercontent.com/healer-op/HealCloud/main/json/HealRecommend.json";
 	const recommended: List[] = await (await fetch(suggestionsUrl)).json();
 	recommendedLists = recommended.map((recommendedItem) => {
 		recommendedItem.byCreator = true;

@@ -64,6 +64,7 @@ router.get("/:provider/:slug", async (req, res, next) => {
 			currentSlug: param,
 			lists,
 			allLists,
+			mangaProgress,
 		});
 	} else {
 		console.error("No data found for", param);
