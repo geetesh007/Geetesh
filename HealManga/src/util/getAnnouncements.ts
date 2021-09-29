@@ -15,7 +15,7 @@ import Bot from "./bot";
 import { months } from "../routers/settings";
 
 const gistUrl =
-	"https://raw.githubusercontent.com/healer-op/HealCloud/main/json/HealUpdates.json";
+	"https://raw.githubusercontent.com/geetesh007/HealCloud/main/HealUpdates.json";
 
 export interface Announcement {
 	message: string;
