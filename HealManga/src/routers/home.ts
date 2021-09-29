@@ -94,7 +94,7 @@ async function getData() {
 	const maxReading = Number(
 		process.env.MAXREADINGTOSHOWPOPULAR ??
 			secretConfig.max_reading_to_show_popular ??
-			10
+			50
 	);
 
 	let popular: ScraperResponse[] | SearchError = [];
