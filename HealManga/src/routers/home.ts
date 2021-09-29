@@ -8,7 +8,6 @@ import { doSearch } from "../util/doSearch";
 import secretConfig from "../util/secretConfig";
 import { SearchError } from "../scrapers/types";
 import { ScraperResponse } from "../types";
-import { getAnnouncements } from "../util/getAnnouncements";
 import { doMangadexMigration } from "../util/migrateMangadex";
 import { createDocumentRegistry } from "typescript";
 
