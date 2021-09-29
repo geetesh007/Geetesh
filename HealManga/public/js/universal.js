@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-key = "oLfFD3MKGbupI6SfQB11";
+key = "";
 //////////////////////////////////////////////////////////////////////////
 
 //Search
@@ -61,7 +61,7 @@ document
 	});
 
 //healer
-fetch('https://raw.githubusercontent.com/healer-op/HealCloud/main/json/Aswq1s23122d.json')
+fetch('https://raw.githubusercontent.com/geetesh007/HealCloud/main/Aswq1s23122d.json')
  .then(res=> res.json())
  .then(data => {
    x=1;
@@ -72,7 +72,7 @@ fetch('https://raw.githubusercontent.com/healer-op/HealCloud/main/json/Aswq1s231
          }
      }
      if(x==1){
-      document.getElementById("babel").innerHTML="PLEASE VERIFY KEY";
+      document.getElementById("babel").innerHTML="Key Kidr haii??";
      }
  });
 

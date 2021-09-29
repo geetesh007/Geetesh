@@ -130,7 +130,7 @@ document.querySelectorAll(".floating-button").forEach((button) => {
 document.addEventListener("keydown", (evt) => {
 	if (
 		!evt.key.startsWith("Arrow") ||
-		getSettings()["enable-keyboard-controls"] === "no"
+		getSettings()["enable-keyboard-controls"] === "yes"
 	)
 		return;
 	evt.preventDefault();
