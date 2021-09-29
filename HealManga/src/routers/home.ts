@@ -24,8 +24,6 @@ router.get("/", async (req, res) => {
 	// Get all data neccesary
 	const { popular, reading, lists } = await getData();
 
-	const announcements = await getAnnouncements();
-
 	res.render("home", {
 		popular,
 		reading,
