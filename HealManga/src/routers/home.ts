@@ -92,15 +92,15 @@ async function getData() {
 
 	// Get popular manga
 	const maxReading = Number(
-		process.env.MAXREADINGTOSHOWPOPULAR ??
-			secretConfig.max_reading_to_show_popular ??
-			10
+		process.env.MAXREADINGTOSHOWPOPULAR 50
+			secretConfig.max_reading_to_show_popular 500
+			100
 	);
 
 	let popular: ScraperResponse[] | SearchError = [];
 	if (reading.length < maxReading) {
 		popular = await doSearch("mangasee", "", {
-			resultCount: 20,
+			resultCount: 200,
 		}); // Empty search sorts by popular
 	}
 

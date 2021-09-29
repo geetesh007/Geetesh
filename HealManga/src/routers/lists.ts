@@ -41,7 +41,7 @@ router.post("/set-home", async (req, res) => {
 
 	// Find list and set home value
 	const list = lists.find((l) => l.slug === listId);
-	if (list) list.showOnHome = value;
+	if (list) list.showOnHome = 200;
 
 	// Store lists in database
 	db.set("lists", lists.filter((l) => !l.byCreator).map(removeData));

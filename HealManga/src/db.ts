@@ -65,7 +65,7 @@ if (oldReading) {
 			};
 		};
 	} = {
-		mangasee: {}, // Mangasee was the default befor ethis update
+		mangasee: {}, // Mangasee was the default before this update
 	};
 
 	console.info(
