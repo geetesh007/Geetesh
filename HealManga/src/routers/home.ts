@@ -100,7 +100,7 @@ async function getData() {
 	let popular: ScraperResponse[] | SearchError = [];
 	if (reading.length < maxReading) {
 		popular = await doSearch("mangasee", "", {
-			resultCount: 20,
+			resultCount: 50,
 		}); // Empty search sorts by popular
 	}
 
