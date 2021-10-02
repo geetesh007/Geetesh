@@ -6,6 +6,8 @@
 		"duration": 1800000
 	},
 	"disallowedGenres": [
-		"smut"
+		"smut",
+		"nsfw",
+		"hentai"
 	]
 }

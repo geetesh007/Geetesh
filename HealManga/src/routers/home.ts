@@ -8,6 +8,7 @@ import { doSearch } from "../util/doSearch";
 import secretConfig from "../util/secretConfig";
 import { SearchError } from "../scrapers/types";
 import { ScraperResponse } from "../types";
+import { getAnnouncements } from "../util/getAnnouncements";
 import { doMangadexMigration } from "../util/migrateMangadex";
 import { createDocumentRegistry } from "typescript";
 
@@ -24,11 +25,27 @@ router.get("/", async (req, res) => {
 	// Get all data neccesary
 	const { popular, reading, lists } = await getData();
 
+	const announcements = await getAnnouncements();
+
 	res.render("home", {
 		popular,
 		reading,
 		lists,
+		announcements,
 		isHome: true,
+	});
+});
+
+router.post("/dismiss-announcement", (req, res) => {
+	const dismissedAnnouncements = db.get("other.announcements-dismissed") || [];
+	const { id } = req.body;
+
+	if (!dismissedAnnouncements.includes(id)) dismissedAnnouncements.push(id);
+
+	db.set("other.announcements-dismissed", dismissedAnnouncements);
+
+	res.json({
+		status: 200,
 	});
 });
 

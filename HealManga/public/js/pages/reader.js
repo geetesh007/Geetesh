@@ -92,7 +92,7 @@ function getPageProgress() {
 
 function readerIsHorizontal() {
 	// Returns if the images are vertical or not
-	return getSettings()["reader-direction"] === "vertical";
+	return getSettings()["reader-direction"] === "horizontal";
 }
 
 // Scroll to page
