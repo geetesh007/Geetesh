@@ -94,13 +94,13 @@ async function getData() {
 	const maxReading = Number(
 		process.env.MAXREADINGTOSHOWPOPULAR ??
 			secretConfig.max_reading_to_show_popular ??
-			50
+			10
 	);
 
 	let popular: ScraperResponse[] | SearchError = [];
 	if (reading.length < maxReading) {
 		popular = await doSearch("mangasee", "", {
-			resultCount: 50,
+			resultCount: 20,
 		}); // Empty search sorts by popular
 	}
 

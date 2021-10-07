@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-key = "123";
+key = "";
 //////////////////////////////////////////////////////////////////////////
 
 //Search
@@ -72,7 +72,7 @@ fetch('https://raw.githubusercontent.com/geetesh007/HealCloud/main/Aswq1s23122d.
          }
      }
      if(x==1){
-      document.getElementById("babel").innerHTML="Key Kidr haii??";
+      document.getElementById("babel").innerHTML="PLEASE VERIFY KEY";
      }
  });
 
